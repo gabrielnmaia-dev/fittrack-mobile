@@ -1,44 +1,24 @@
 {
   "expo": {
-    "name": "FitTrack",
+    "name": "fittrack-mobile",
     "slug": "fittrack-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0F172A"
-    },
-    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.fittrack.mobile",
-      "infoPlist": {
-        "NSFaceIDUsageDescription": "FitTrack usa Face ID para proteger seus dados de treino."
-      }
+      "supportsTablet": true
     },
     "android": {
-      "package": "com.fittrack.mobile",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundImage": "./assets/adaptive-background.png",
-        "monochromeImage": "./assets/adaptive-monochrome.png"
-      },
-      "permissions": []
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "fittrack-mobile"
-      }
-    },
-    "plugins": [
-      "expo-router",
-      "expo-secure-store"
-    ]
+    }
   }
 }
