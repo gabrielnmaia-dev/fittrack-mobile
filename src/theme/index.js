@@ -1,4 +1,4 @@
-import { COLORS } from './theme/colors';
+import { COLORS, SPACING, BORDER_RADIUS } from './colors';
 
 export const baseStyles = {
   container: {
@@ -8,40 +8,36 @@ export const baseStyles = {
   screen: {
     flex: 1,
     backgroundColor: COLORS.background,
-    padding: 16,
+    padding: SPACING.lg,
   },
   card: {
     backgroundColor: COLORS.surface,
-    borderRadius: 12,
-    padding: 16,
-    marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: 6,
-    elevation: 3,
+    borderRadius: BORDER_RADIUS.xl,
+    padding: SPACING.lg,
+    borderWidth: 1,
+    borderColor: COLORS.borderLight,
   },
   input: {
-    backgroundColor: COLORS.surface,
+    backgroundColor: COLORS.input,
     borderWidth: 1,
-    borderColor: COLORS.border,
-    borderRadius: 12,
+    borderColor: COLORS.borderLight,
+    borderRadius: BORDER_RADIUS.md,
     paddingHorizontal: 16,
     paddingVertical: 14,
-    fontSize: 16,
+    fontSize: 15,
     color: COLORS.textPrimary,
   },
   buttonPrimary: {
     backgroundColor: COLORS.primary,
-    borderRadius: 12,
+    borderRadius: BORDER_RADIUS.md,
     paddingVertical: 16,
     alignItems: 'center',
     justifyContent: 'center',
   },
   buttonPrimaryText: {
-    color: COLORS.textInverse,
+    color: COLORS.onPrimary,
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '800',
   },
   textPrimary: {
     color: COLORS.textPrimary,
@@ -50,6 +46,6 @@ export const baseStyles = {
     color: COLORS.textSecondary,
   },
   textLight: {
-    color: COLORS.textLight,
+    color: COLORS.textMuted,
   },
 };

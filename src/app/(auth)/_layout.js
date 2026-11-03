@@ -1,12 +1,18 @@
-import React from 'react';
 import { Stack } from 'expo-router';
 
+import { COLORS } from '@/theme/colors';
+
 export default function AuthLayout() {
-  return React.createElement(
-    Stack,
-    null,
-    React.createElement(Stack.Screen, {
-      options: { headerShown: false },
-    })
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: COLORS.background },
+        animation: 'slide_from_right',
+      }}
+    >
+      <Stack.Screen name="login" />
+      <Stack.Screen name="register" />
+    </Stack>
   );
 }
