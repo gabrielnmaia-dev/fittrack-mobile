@@ -1,17 +1,15 @@
+const expoConfig = require('eslint-config-expo/flat');
+
 module.exports = [
+  ...expoConfig,
   {
     files: ['**/*.js'],
-    languageOptions: {
-      ecmaVersion: 2022,
-      sourceType: 'module',
-      globals: {
-        React: 'readonly',
-        window: 'readonly',
-        document: 'readonly',
-        navigator: 'readonly',
-        global: 'readonly',
-        process: 'readonly',
-        __DEV__: 'readonly',
+    settings: {
+      'import/resolver': {
+        alias: {
+          map: [['@', './src']],
+          extensions: ['.js', '.jsx', '.json'],
+        },
       },
     },
     rules: {
