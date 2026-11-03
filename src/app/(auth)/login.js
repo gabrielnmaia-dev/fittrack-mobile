@@ -55,7 +55,8 @@ export default function LoginScreen() {
     setTimeout(() => {
       setCarregando(false);
       setMensagem({ tipo: 'sucesso', texto: 'Acesso liberado. Bem-vindo ao FitTrack!' });
-    }, 900);
+      router.replace('/(tabs)/dashboard');
+    }, 700);
   }
 
   return (

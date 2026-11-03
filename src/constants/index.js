@@ -17,3 +17,5 @@ export const STORAGE_KEYS = {
   theme: '@fittrack_theme',
   onboardingCompleted: '@fittrack_onboarding',
 };
+
+export { BORDER_RADIUS, COLORS, SPACING } from '@/theme/colors';
