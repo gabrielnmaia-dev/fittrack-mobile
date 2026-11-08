@@ -41,8 +41,12 @@ export default function TabsLayout() {
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="dumbbell" size={size} color={color} />
           ),
-        }}
+        }}  
       />
+      <Tabs.Screen
+        name="workouts_create"
+        options={{ href: null, tabBarStyle: { display: 'none' } }}
+        />
       <Tabs.Screen
         name="progress"
         options={{
